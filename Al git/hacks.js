@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var lista=["piedra.png","papel.png","tijera.png"];
+	var lista=["piedra.png","papel.png","tijeras.png"];
 	var rondas=0;
 	var victorias=0;
 	var maquina=0;
@@ -7,6 +7,8 @@ $(document).ready(function(){
 	var res=$(".resul");
 	var cpu=0;
 	var marca=$(".marcador");
+	var iajugada=$(".ia");
+	var imag=$('.iaimg');
 	function hola() {
 		bienvenid.text('Marcador');
 	}
@@ -38,6 +40,9 @@ function proceso(valor){
 			fin(rondas);
 		}
 		marca.text(victorias+'-'+maquina);
+		iajugada.text('La CPU ha jugado:');
+		imag.attr('src',lista[cpu]);
+
 	}
 	function fin(round){
 		if(victorias==3 || maquina==3){

@@ -15,9 +15,10 @@ h1{
 
 .png{
 	height: 120px;
-
 }
-
+.iaimg{
+	height: 50px;
+}
 .contenido{
 	text-align: center;
 }
