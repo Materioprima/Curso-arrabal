@@ -9,9 +9,9 @@ $(document).ready(function(){
 	var marca=$(".marcador");
 	var iajugada=$(".ia");
 	var imag=$('.iaimg');
-	function hola() {
-		bienvenid.text('Marcador');
-	}
+function hola() {
+	bienvenid.text('Marcador');
+}
 function proceso(valor){
 		cpu=Math.floor(Math.random()*3);
 		if(valor==0 && cpu==2){
@@ -45,11 +45,8 @@ function proceso(valor){
 
 	}
 	function fin(round){
-		if(victorias==3 || maquina==3){
-			if(victorias>=2){
-				res.text('Felicidades, has ganado a la CPU.');
-			}else if (maquina==victorias) {
-				res.text('Empate');
+		if(victorias==3){
+			res.text('Felicidades, has ganado a la CPU.');
 			}else{
 				res.text('Ha ganado la CPU, vuelve a intentarlo');
 			}
