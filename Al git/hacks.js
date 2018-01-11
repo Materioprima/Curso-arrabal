@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var lista=["piedra.png","papel.png","tijeras.png"];
+	var lista=["piedra.png","papel.png","tijeras.png","win.png","lus.png"];
 	var rondas=0;
 	var victorias=0;
 	var maquina=0;
@@ -11,6 +11,11 @@ $(document).ready(function(){
 	var imag=$('.iaimg');
 function hola() {
 	bienvenid.text('Marcador');
+}
+function reseto(){
+	victorias=0;
+	maquina=0;
+	hola();
 }
 function proceso(valor){
 		cpu=Math.floor(Math.random()*3);
@@ -33,9 +38,11 @@ function proceso(valor){
 		if(victorias==3){
 			res.text('Felicidades, has ganado a la CPU.');
 			bienvenid.text('Fin del juego');
+			reseto();
 		}else if(maquina==3){
 			res.text('Has perdido, vuelve a intentarlo');
 			bienvenid.text('Fin del juego');
+			reseto();
 		}
 		marca.text(victorias+'-'+maquina);
 		iajugada.text('La CPU ha jugado:');
