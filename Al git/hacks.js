@@ -1,24 +1,22 @@
 $(document).ready(function(){
 	var lista=["piedra.png","papel.png","tijeras.png","win.png","lus.png"];
-	var rondas=0;
 	var victorias=0;
 	var maquina=0;
-	var bienvenid=$(".bienvenida");
 	var res=$(".resul");
-	var cpu=0;
-	var marca=$(".marcador");
-	var iajugada=$(".ia");
-	var imag=$('.iaimg');
 function hola() {
-	bienvenid.text('Marcador');
+	$(".bienvenida").text('Marcador');
 }
-function reseto(){
-	victorias=0;
-	maquina=0;
-	hola();
+function reseto(s){
+	if(s==3){
+		$(".bienvenida").text('Felicidades has ganado a la CPU');
+	}else if(s==4){
+		$(".bienvenida").text('Has perdido, vuelve a intentarlo');
+	}
+	$(".fin").attr('src',lista[s]);
+	$(".cl4").removeClass("oculto");
 }
 function proceso(valor){
-		cpu=Math.floor(Math.random()*3);
+		var cpu=Math.floor(Math.random()*3);
 		if(valor==0 && cpu==2){
 				victorias++;
 				res.text('Has ganado');
@@ -35,18 +33,14 @@ function proceso(valor){
 			maquina++;
 			res.text('Has perdido');
 		}
-		if(victorias==3){
-			res.text('Felicidades, has ganado a la CPU.');
-			bienvenid.text('Fin del juego');
-			reseto();
+		if(victorias==3){		
+			reseto(3);
 		}else if(maquina==3){
-			res.text('Has perdido, vuelve a intentarlo');
-			bienvenid.text('Fin del juego');
-			reseto();
+			reseto(4);
 		}
-		marca.text(victorias+'-'+maquina);
-		iajugada.text('La CPU ha jugado:');
-		imag.attr('src',lista[cpu]);
+		$(".marcador").text(victorias+'-'+maquina);
+		$(".ia").text('La CPU ha jugado:');
+		$(".iaimg").attr('src',lista[cpu]);
 
 	}
 	hola();
@@ -59,6 +53,16 @@ function proceso(valor){
 	$(".cl3").click(function(){
 		proceso(2);
 	});
+	$(".cl4").click(function(){
+		victorias=0;
+		maquina=0;
+		hola();
+		$(".marcador").text('0-0');
+		$(".ia").text('');
+		res.text('');
+		$(".iaimg").attr('src','');
+		$("cl4").addClass(".oculto");
+	})
 
 });
 

@@ -5,6 +5,7 @@ body {
   background-color: #00FF3C;
   font-size: 18px;
   margin: 0;
+  padding: 0;
   color: #000000;
   box-sizing: border-box;
 }
@@ -73,12 +74,13 @@ h1{
 .bienvenida{
 	font-size: 40px;
 	color: #0006FF;
-	border-bottom: 5px;
+	margin: 1px;
 }
 
 .marcador{
 	font-size: 40px;
 	color: #000000;
+	margin: 0;
 }
 
 .recuadro{
@@ -90,4 +92,17 @@ h1{
     transform: translateX(-50%);
     left:50%;
     margin-bottom: 10px;
+}
+.cl4{
+	display: block;
+	position: relative;
+    transform: translateX(-50%);
+    left:50%;
+    margin-bottom: 5px;
+}
+.oculto{
+	visibility: hidden;
+}
+.fin{
+	height: 60px;
 }
