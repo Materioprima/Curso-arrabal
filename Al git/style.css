@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #00FF3C;
+  font-size: 18px;
+  margin: 0;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+h1{
+	font-size: 60px;
+}
+
+.png{
+	height: 120px;
+
+}
+
+.contenido{
+	text-align: center;
+}
+
+.btn{
+	border-radius: 7px;
+	cursor: pointer;
+	margin-right: 10px;
+	border: 2px solid black;
+}
+
+.btn:hover{
+	background-color: #ACF303;
+}
+
+@keyframes gameboy{
+	from{
+		opacity: 0;
+		transform: scale3d(1, 1, 1);
+		color: #FFFFFF;
+	}
+	20%{
+		color: #FF0000;
+		opacity: 0.8;
+	}
+	40%{
+		color: #0090FF;
+		opacity: 0.6;
+	}
+	60%{
+		color: #FF00F0;
+		opacity: 0.7;
+	}
+	80%{
+		color: #D2FF00;
+		opacity: 0.9;
+	}
+	to{
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+		color: #FFFFFF;
+	}
+}
+
+.animation{
+	animation-name: gameboy;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+
+.bienvenida{
+	font-size: 40px;
+	color: #0006FF;
+	border-bottom: 5px;
+}
+
+.marcador{
+	font-size: 40px;
+	color: #000000;
+}
