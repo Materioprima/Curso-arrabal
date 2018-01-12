@@ -7,6 +7,7 @@ function hola() {
 	$(".bienvenida").text('Marcador');
 }
 function reseto(s){
+	$(".bienvenida").addClass("animation");
 	if(s==3){
 		$(".bienvenida").text('Felicidades has ganado a la CPU');
 	}else if(s==4){
@@ -61,7 +62,9 @@ function proceso(valor){
 		$(".ia").text('');
 		res.text('');
 		$(".iaimg").attr('src','');
-		$("cl4").addClass(".oculto");
+		$(".fin").attr('src','');
+		$(".bienvenida").removeClass("animation");
+		$(".cl4").addClass("oculto");
 	})
 
 });
