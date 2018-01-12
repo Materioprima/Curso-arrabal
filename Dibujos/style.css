@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /*background: linear-gradient(to bottom right,#00FF3C,#ED1313);*/
+  background-image: url('pac.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  box-sizing: border-box;
+}
+@keyframes pacman{
+  from{
+    transform: scale3d(1, 1, 1);
+    border-right-color:transparent;
+  }
+  10%{
+    border-right-color:transparent;
+  }
+  20%{
+    border-right-color:#FADA02;
+    transform: translateX(700px);
+  }
+  30%{
+    border-right-color:transparent;
+  }
+  40%{
+    border-right-color:#FADA02;
+  }
+  50%{
+    border-right-color:transparent;
+  }
+  60%{
+    border-right-color:#FADA02;
+  }
+  70%{
+    border-right-color:transparent;
+  }
+  80%{
+    border-right-color:#FADA02;
+  }
+  90%{
+    border-right-color:transparent;
+  }
+  to{
+    transform: scale3d(1, 1, 1);
+    border-right-color:#FADA02;
+  }
+}
+
+.animation{
+  animation-name: pacman;
+  animation-duration: 1.5s;
+  /*animation-timing-function: step-end;*/
+  animation-iteration-count: infinite;
+}
+
+.pacman {
+  width: 0px;
+  height: 0px; 
+  border-right: 60px solid transparent;
+  border-top: 60px solid #FADA02;
+  border-left: 60px solid #FADA02;
+  border-bottom: 60px solid #FADA02;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.pacman:hover{
+  filter: grayscale(1);
+}
