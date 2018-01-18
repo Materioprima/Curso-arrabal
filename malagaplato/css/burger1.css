@@ -177,7 +177,7 @@ footer p {
     display: inline;
     font-family: 'Buenard', serif;
     font-weight: bold;
-    border: 2px solid grey;
+    /*border: 2px solid grey;*/
 }
 
 footer p:first-of-type {
@@ -201,7 +201,7 @@ footer a img:last-of-type {
 
 .imgf {
     position: absolute;
-    right: 100px;
+    right: 200px;
     top: 10px;
 }
 
@@ -217,7 +217,6 @@ footer a img:hover {
 }
 
 footer p {
-    cursor: pointer;
     overflow: visible;
 }
 

@@ -5,9 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Málaga al plato</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body>
     <header>
         <div class="banner">
@@ -54,29 +56,78 @@
             </li>
         </ul>
     </nav>
-    <div class="contenedorfotos">
-        <div class="fotoscentro">
-            <a href="Vicen Playa.html">
+    <main class="container">
+        <div class="row">
+            <div id="myCarousel" class="carousel slide col-md-6" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                  <div class="item active">
+                    <img src="images/fastfood/pizza2.png" alt="Los Angeles" style="width:100%;">
+                  </div>
+
+                  <div class="item">
+                    <img src="images/fish/plato1mari.jpg" alt="Chicago" style="width:100%; height: 400px;">
+                  </div>
+                
+                  <div class="item">
+                    <img src="images/traditional/pimpi1.jpg" alt="New York" style="width:100%; height: 400px;">
+                  </div>
+              
+                </div>
+             <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <h2 class="text-center">Málaga al plato</h2>
+                <p>En esta página podrás encontrar una gran variedad de restaurantes de la ciudad de Málaga. Tanto para los paladares más selectos como para los bolsillos de los jóvenes.</p>
+                <p>La gastronomía de Málaga es el conjunto de platos típicos en la mesa de la provincia de Málaga, España. Es una cocina marinera, encuadrada dentro de la gastronomía de Andalucía, y por lo tanto recibe influencias de todos los pueblos del Mediterráneo. Las influencias de las cocinas Son famosos los salazones fenicios y romanos, la repostería árabe de miel y frutos secos y las técnicas de cocina castellana.</p>
+            </div>
+            </div>
+        </div>
+        <h3 class="row text-center">Restaurantes destacados</h3>
+        <section id="nav_fotos" class="row">
+        <article>
+            <a href="vicen.html">
+                <img src="images/vicen.jpg" alt="">
                 <p>El Vincen Playa es un comedor especializado en mariscos y arroces tradicionales, en ambiente marinero con terraza y vistas al mar.</p>
             </a>
-        </div>
-        <div class="fotoscentro">
+        </article>  
+        <article>
             <a href="katogui.html">
+                <img src="images/saloniki.jpg" alt="">
                 <p>El Katogui Agora es un restaurante griego de decoración vanguardista con un gran mural de botellas azules y una acogedora terraza.
                 </p>
             </a>
-        </div>
-        <div class="fotoscentro">
+        </article>
+        <article>
             <a href="taco.html">
+                <img src="images/taco.jpg" alt="">
                 <p>TacoBell es una cadena de comida rápida mexicana. Ven y disfruta de tus tacos, burritos o comida sabrosa y picante. </p>
             </a>
-        </div>
-        <div class="fotoscentro">
+        </article>
+        <article>
             <a href="pimpi.html">
+                <img src="images/pimpi.jpg" alt="">
                 <p>El Pimpi es una taberna de tapas y vinos locales con ambiente flamenco, azulejería, una sala de barriles y un patio andaluz.</p>
             </a>
-        </div>
-    </div>
+        </article>
+    </section>
+    </main>
     <footer>
         <p>Contacto</p>
         <div class="imgf">
