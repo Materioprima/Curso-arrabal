@@ -110,6 +110,20 @@ nav li.encabezado:hover {
     height: 70px;
 }
 
+/* Carrusel */
+#myCarousel{
+    margin: 10px -2.6px;
+    height: 350px;
+    overflow: hidden;
+    background-color: transparent;
+}
+.carousel-control:last-of-type {
+    margin-right: 13.7px;
+}
+
+.carousel-control:first-of-type {
+    margin-left: 14px;
+}
 /*Fotos del index*/
 #nav_fotos{
     display: flex;
@@ -128,7 +142,6 @@ nav li.encabezado:hover {
 }
 
 #nav_fotos article{
-    border-radius: 10px;
     width: 280px;
     padding: 5px;
     border: 2px solid black;
