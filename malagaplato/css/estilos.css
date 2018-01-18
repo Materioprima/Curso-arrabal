@@ -110,115 +110,38 @@ nav li.encabezado:hover {
     height: 70px;
 }
 
-.contenedorfotos {
-    padding-top: 10%;
-    padding-left: 1%;
-    height: 90vh;
-    width: 100%;
-    display: block;
+/*Fotos del index*/
+#nav_fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-a p {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    padding: 10px;
-    margin: 0;
+#nav_fotos a{
+    text-decoration: none;
+    color: white;
 }
 
-.fotoscentro {
-    height: 500px;
-    width: 500px;
-    padding: 3px;
-    top: -30px;
-    display: inline-block;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#nav_fotos p{
+    width: 240px;
+    margin:0 20px;
+}
+
+#nav_fotos article{
+    border-radius: 10px;
+    width: 280px;
+    padding: 5px;
     border: 2px solid black;
-    transition: all 0s ease-out;
+    background-color: black;
 }
 
-.fotoscentro:first-child {
-    background-image: url(../images/vicen.jpg);
-    margin-left: 100px;
-    margin-right: 30px;
+#nav_fotos article img{
+   height: 200px;
+    width: 100%;
+
 }
 
-.fotoscentro:first-of-type:hover {
-    opacity: 0.70;
-    transition: opacity 500ms;
-    transform: rotate(0deg) xscale(1.03);
-    background-color: rgba(0, 0, 0, 0.56);
-}
 
-.fotoscentro:first-of-type p {
-    top: 90px;
-    font-size: 1.5em;
-    color: black;
-    font-family: 'Kalam', cursive;
-}
-
-.fotoscentro:nth-child(2) {
-    background-image: url(../images/saloniki.jpg);
-    margin-right: 30px;
-}
-
-.fotoscentro:nth-child(2):hover {
-    opacity: 0.70;
-    transition: opacity 500ms;
-    transform: rotate(0deg) xscale(1.03);
-    background-color: rgba(0, 0, 0, 0.56);
-}
-
-.fotoscentro:nth-child(2) p {
-    top: 90px;
-    font-size: 1.5em;
-    color: black;
-    font-family: 'Kalam', cursive;
-}
-
-.fotoscentro:nth-child(3) {
-    background-image: url(../images/taco.jpg);
-    margin-left: 100px;
-    margin-right: 30px;
-}
-
-.fotoscentro:nth-child(3):hover {
-    opacity: 0.70;
-    transition: opacity 500ms;
-    transform: rotate(0deg) xscale(1.03);
-    background-color: rgba(0, 0, 0, 0.56);
-}
-
-.fotoscentro:nth-child(3) p {
-    top: 90px;
-    font-size: 1.5em;
-    color: black;
-    font-family: 'Kalam', cursive;
-}
-
-.fotoscentro:nth-child(4) {
-    background-image: url(../images/pimpi.jpg);
-    margin-right: 30px;
-}
-
-.fotoscentro:nth-child(4):hover {
-    opacity: 0.70;
-    transition: opacity 500ms;
-    transform: rotate(0deg) xscale(1.03);
-    background-color: rgba(0, 0, 0, 0.56);
-}
-
-.fotoscentro:nth-child(4) p {
-    top: 90px;
-    font-size: 1.5em;
-    color: black;
-    font-family: 'Kalam', cursive;
-}
 
 
 
