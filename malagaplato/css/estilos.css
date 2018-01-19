@@ -164,30 +164,18 @@ footer {
     background-color: rgba(4, 62, 93, 0.55);
     border: 2px solid grey;
     height: 80px;
-    position: relative;
-    top: 500px;
 }
 
 footer p {
-    display: inline;
-    font-family: 'Buenard', serif;
-    font-weight: bold;
-    border: 2px solid grey;
+    
 }
 
 footer p:first-of-type {
-    position: absolute;
-    left: 110px;
-    top: -15px;
-    font-size: 1.2em;
+   
 }
 
 footer p:last-of-type {
-    font-size: 0.8em;
-    position: absolute;
-    right: 450px;
-    top: 30px;
-}
+   
 
 footer a img:last-of-type {
     width: 40px;
@@ -228,3 +216,67 @@ footer p:hover footer form {
     height: 200px;
     display: block;
 }
+
+/*Footer bueno*/
+footer {
+    background-color: rgba(4, 62, 93, 0.55);
+    border: 2px solid grey;
+    height: 80px;
+    position: relative;
+    top: 100px;
+}
+
+footer p {
+    display: inline;
+    font-family: 'Buenard', serif;
+    font-weight: bold;
+    /*border: 2px solid grey;*/
+}
+
+footer p:first-of-type {
+
+}
+
+footer p:last-of-type {
+    font-size: 0.8em;
+}
+
+footer a img:last-of-type {
+    width: 40px;
+    height: 40px;
+}
+
+.imgf {
+    position: absolute;
+    right: 200px;
+    top: 10px;
+}
+
+footer a img {
+    /*       top: -250px;
+       left: 940px;*/
+}
+
+footer a img:hover {
+    box-shadow: 0px 0px 30px rgba(0, 98, 255, 0.8);
+    border-radius: 50%;
+    overflow: visible;
+}
+
+footer p {
+    overflow: visible;
+}
+
+footer form {
+    transition: all 0.3s;
+    height: 0px;
+    overflow: hidden;
+    display: none;
+}
+
+footer p:hover footer form {
+    overflow: visible;
+    height: 200px;
+    display: block;
+}
+
