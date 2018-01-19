@@ -3,64 +3,59 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comida rápida</title>
-     <link rel="stylesheet" href="css/burger1.css">
-  </head>
-  <body>
-    <header>
-      <img src="images/banner.jpg" alt="">
-    </header>
-      <nav class="menu">
-        <ul>
-          <li> Comida Típica 
-              <ul>
-                <li> <a href="">El Pimpi</a></li>
-                <li><a href="">Plaza de Chinitas</a></li>
-                <li><a href="">Casa Lola</a></li>
-                <li><a href="">Pepa y Pepe</a></li>
-                <li><a href="">La Barra de Zapata</a></li>
-              </ul>
-            
-        </li>
-          <li>Chiringuitos
-                <ul>
-                <li><a href="">La Campana Playa</a></li>
-                <li><a href="">Oasis</a></li>
-                <li><a href="">Vicen Playa</a></li>
-                <li><a href="">Servando</a></li>
-                <li><a href="">Mari Gutierrez</a></li>
-              </ul>            
-            </li>
-          <li>Internacional
-                <ul>
-                <li><a href="">katogui Agora</a></li>
-                <li><a href="">La Cocotte</a></li>
-                <li><a href="">BA Japones</a></li>
-                <li><a href="">Saloniki</a></li>
-                <li><a href="">Angus</a></li>
-              </ul> 
-            
-            </li>
-          <li>Fast Food
-                <ul>
-                <li><a href="">Burger King</a></li>
-                <li><a href="">Telepizza</a></li>
-                <li><a href="">Taco Bell</a></li>
-                <li><a href="">100 Montaditos</a></li>
-                <li><a href="">Kentaky Fried Chiken</a></li>
-              </ul> 
-            </li>
+    <title>Telepizza</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+        <header>
+             </header>
+           <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chiringuitos
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="campana.html">La campana</a></li>
+              <li><a href="vicen.html">Vicen Playa</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Internacional
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="katogui.html">Katogui Agora</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Comida rápida
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="burger2.html">Burger King</a></li>
+              <li><a href="telepizza.html">Telepizza</a></li>
+              <li><a href="taco.html">Tacobell</a></li>
+              <li><a href="montaditos.html">100 montaditos</a></li>
+              <li><a href="KFC.html">Kentucky Fried Chicken</a></li>
+            </ul>
+          </li>
         </ul>
-      </nav>
-      
+      </div>
+    </nav>
     <!-- Aquí empieza la parte de abajo -->
-    <section>
-    <header>
+    <main class="container">
+    <section class="row">
+      <div class="col-md-6">
       <h1>Telepizza</h1>
-      </header>
-        <img src="images/fastfood/telepizza.png" class="img1">
+        <img src="images/fastfood/telepizza.png" class="img1 center-block">
         <p>Telepizza es una cadena multinacional de origen español de pizzerías con presencia en varios países del mundo. Tiene su sede central en San Sebastián de los Reyes, municipio de la provincia de Madrid. Actualmente es la mayor compañía de pizzas no proveniente de Estados Unidos.</p>
-      <div class="items1">
+      </div>
+      <div class="items1 col-md-6">
       <h2>Información</h2>
       <ul>
         <li><span>Nombre:</span> Telepizza Fuente Olletas</li>
@@ -72,23 +67,50 @@
           <li><span>Mejor plato:</span>Variedad de pizzas, pastas y buffet de pizzas.</li>
         <li><span>Precio:</span> 6€/20 por persona.</li>
         <li><span>Horarios: 13AM/00PM</span></li>
-        <li><span>Imágenes:</span></li>
-        <li><img src="images/fastfood/pizza1.png" width="20%" height="20%"></li>
-        <li><img src="images/fastfood/pizza2.png" width="20%" height="20%"></li>
-        <li><img src="images/fastfood/pizza3.jpg" width="20%" height="20%"></li>
         </ul>
       </div>
     </section>
-    <footer>
-        <h2>Créditos:</h2>
-        <p>Juanfran</p>
-        <p>Pablo</p>
-        <p>Mar</p>
-        <p>Cris</p>
-          <a href="https://www.twitter.com"><img src="images/twitter.svg"></a> 
-          <a href="https://www.facebook.com"><img src="images/facebook.svg"></a> 
-          <a href="https://www.youtube.es"><img src="images/youtube.svg"></a> 
-          <a href="contact.html">Contacto</a> 
-    </footer>
+    <section class="fotos row">
+        <div class="col-md-4">
+            <img src="images/fastfood/pizza1.png" alt="" class="center-block">
+        </div>
+        <div class="col-md-4">
+            <img src="images/fastfood/pizza2.png" alt="" class="center-block">
+        </div>
+        <div class="col-md-4">
+            <img src="images/fastfood/pizza3.jpg" alt="" class="center-block">
+        </div>
+    </section>
+    </main>
+     <footer class="page-footer blue center-on-small-only">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="title">Málaga al plato</h5>
+                <p>Creada por Juanfran, Pablo, Mar y Cris. Totalmente restaurada por el equipo Pebaso's (Curro, David, Mateo y Paco).</p>
+            </div>
+            <div class="col-md-6">
+                <h5 class="title">Restaurantes</h5>
+                <ul>
+                    <li><a href="campana.html">La campana</a></li>
+                    <li><a href="vicen.html">Vicen Playa</a></li>
+                    <li><a href="katogui.html">Katogui Agora</a></li>
+                    <li><a href="burger2.html">Burger King</a></li>
+                    <li><a href="telepizza.html">Telepizza</a></li>
+                    <li><a href="taco.html">Tacobell</a></li>
+                    <li><a href="montaditos.html">100 montaditos</a></li>
+                    <li><a href="KFC.html">Kentucky Fried Chicken</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="text-right">
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+        </div>
+    </div>
+</footer>
   </body>
 </html>

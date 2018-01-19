@@ -116,3 +116,41 @@ footer i{
     width:100%;
     color:grey;
 }
+
+/*Fichas*/
+.items1 {
+    background-image: url(../images/Cartademenu.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Buenard', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.items1 img{
+    width:50px;
+}
+
+.items1 a:link {
+    color: red;
+}
+
+.img1{
+    width:200px;
+}
+.fotos{
+    display:flex;
+    margin-top: 50px;
+}
+
+.fotos div{
+    align-items: flex-end;
+    display:flex;
+}
+
+.fotos div img´{
+    align-items: flex-end;
+}
+.fotos img{
+        width: 250px;
+}
